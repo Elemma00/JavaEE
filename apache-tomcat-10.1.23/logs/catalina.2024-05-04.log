@@ -1,0 +1,55 @@
+04-May-2024 17:55:09.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.1.23
+04-May-2024 17:55:09.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Apr 16 2024 12:17:18 UTC
+04-May-2024 17:55:09.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.1.23.0
+04-May-2024 17:55:09.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+04-May-2024 17:55:09.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+04-May-2024 17:55:09.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+04-May-2024 17:55:09.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         D:\Archivos de Programa\Java\jdk-21.0.2
+04-May-2024 17:55:09.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.2+13-58
+04-May-2024 17:55:09.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+04-May-2024 17:55:09.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23
+04-May-2024 17:55:09.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23
+04-May-2024 17:55:09.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\conf\logging.properties
+04-May-2024 17:55:09.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-May-2024 17:55:09.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+04-May-2024 17:55:09.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-May-2024 17:55:09.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+04-May-2024 17:55:09.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+04-May-2024 17:55:09.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+04-May-2024 17:55:09.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-May-2024 17:55:09.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-May-2024 17:55:09.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23
+04-May-2024 17:55:09.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23
+04-May-2024 17:55:09.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\temp
+04-May-2024 17:55:09.246 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [2.0.7] con la versión APR [1.7.4].
+04-May-2024 17:55:09.283 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.13 30 Jan 2024]
+04-May-2024 17:55:09.875 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+04-May-2024 17:55:09.924 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1351] milliseconds
+04-May-2024 17:55:10.018 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+04-May-2024 17:55:10.019 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.23]
+04-May-2024 17:55:10.144 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp.war] de la aplicación web
+04-May-2024 17:55:10.876 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp.war] has finished in [721] ms
+04-May-2024 17:55:10.877 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\docs] de la aplicación web
+04-May-2024 17:55:10.955 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\docs] has finished in [77] ms
+04-May-2024 17:55:10.955 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\examples] de la aplicación web
+04-May-2024 17:55:12.774 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\examples] has finished in [1.819] ms
+04-May-2024 17:55:12.775 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\host-manager] de la aplicación web
+04-May-2024 17:55:12.848 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\host-manager] has finished in [74] ms
+04-May-2024 17:55:12.849 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\manager] de la aplicación web
+04-May-2024 17:55:12.913 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\manager] has finished in [64] ms
+04-May-2024 17:55:12.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\ROOT] de la aplicación web
+04-May-2024 17:55:12.952 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\ROOT] has finished in [38] ms
+04-May-2024 17:55:12.957 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-May-2024 17:55:13.010 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3084] milliseconds
+04-May-2024 17:56:25.708 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war] de la aplicación web
+04-May-2024 17:56:25.771 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war] has finished in [63] ms
+04-May-2024 17:58:15.457 INFO [http-nio-8080-exec-9] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/webapp-form]
+04-May-2024 17:58:15.497 INFO [http-nio-8080-exec-9] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war] de la aplicación web
+04-May-2024 17:58:15.540 INFO [http-nio-8080-exec-9] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war] has finished in [43] ms
+04-May-2024 18:05:05.346 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/webapp-form]
+04-May-2024 18:05:05.368 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war] de la aplicación web
+04-May-2024 18:05:05.468 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war] has finished in [100] ms
+04-May-2024 18:05:56.920 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/webapp-form]
+04-May-2024 18:05:56.942 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war] de la aplicación web
+04-May-2024 18:05:57.013 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\CURSOS\CursoJava\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war] has finished in [71] ms
