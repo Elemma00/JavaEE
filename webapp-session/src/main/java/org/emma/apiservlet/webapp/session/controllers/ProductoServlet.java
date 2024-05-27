@@ -24,6 +24,8 @@ public class ProductoServlet extends HttpServlet {
         LoginService auth = new LoginServiceSessionImpl();
         Optional<String> usernameOptional = auth.getUsername(req);
 
+        String mensajeRequest = (String) req.getAttribute("mensaje");
+        String mensajeApp = (String) getServletContext().getAttribute("mensaje");
         resp.setContentType("text/html;charset=UTF-8");
 
         try (PrintWriter out = resp.getWriter()) {
@@ -41,7 +43,7 @@ public class ProductoServlet extends HttpServlet {
             out.println("<th>id</th>");
             out.println("<th>Nombre</th>");
             out.println("<th>Tipo</th>");
-            if(usernameOptional.isPresent()) {
+            if (usernameOptional.isPresent()) {
                 out.println("<th>Precio</th>");
                 out.println("<th>Agregar</th>");
             }
@@ -51,14 +53,16 @@ public class ProductoServlet extends HttpServlet {
                 out.println("<td>" + p.getId() + "</td>");
                 out.println("<td>" + p.getNombre() + "</td>");
                 out.println("<td>" + p.getTipo() + "</td>");
-                if(usernameOptional.isPresent()) {
+                if (usernameOptional.isPresent()) {
                     out.println("<td>" + p.getPrecio() + "</td>");
-                    out.println("<td><a href=\""+ req.getContextPath() + "/agregar-carro?id=+"+p.getId()+"\""+">Agregar al carro</a></td>");
+                    out.println("<td><a href=\"" + req.getContextPath() + "/agregar-carro?id=+" + p.getId() + "\"" + ">Agregar al carro</a></td>");
 
                 }
                 out.println("</tr>");
             });
             out.println("</table>");
+            out.println("<p>" + mensajeApp + "</p>");
+            out.println("<p>" + mensajeRequest + "</p>");
             out.println("     </body>");
             out.println("</html>");
         }
