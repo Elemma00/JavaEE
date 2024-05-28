@@ -1,0 +1,2 @@
+27-May-2024 00:15:02.590 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/webapp-session'
+27-May-2024 00:15:02.590 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-session.war.tmp

@@ -1,0 +1,65 @@
+23-May-2024 19:51:43.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.23
+23-May-2024 19:51:43.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 16 2024 12:17:18 UTC
+23-May-2024 19:51:43.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.23.0
+23-May-2024 19:51:43.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+23-May-2024 19:51:43.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+23-May-2024 19:51:43.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+23-May-2024 19:51:43.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Java\jdk-21.0.2
+23-May-2024 19:51:43.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.2+13-58
+23-May-2024 19:51:43.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-May-2024 19:51:43.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23
+23-May-2024 19:51:43.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23
+23-May-2024 19:51:43.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\conf\logging.properties
+23-May-2024 19:51:43.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-May-2024 19:51:43.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-May-2024 19:51:43.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-May-2024 19:51:43.748 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+23-May-2024 19:51:43.748 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+23-May-2024 19:51:43.748 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+23-May-2024 19:51:43.748 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+23-May-2024 19:51:43.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+23-May-2024 19:51:43.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23
+23-May-2024 19:51:43.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23
+23-May-2024 19:51:43.750 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\temp
+23-May-2024 19:51:43.752 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+23-May-2024 19:51:43.758 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+23-May-2024 19:51:44.134 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-May-2024 19:51:44.169 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [712] milliseconds
+23-May-2024 19:51:44.291 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-May-2024 19:51:44.291 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.23]
+23-May-2024 19:51:44.321 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-cookie.war]
+23-May-2024 19:51:44.345 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-cookie] was found with a last modified time that did not match the associated WAR. It will be deleted.
+23-May-2024 19:51:45.050 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23-May-2024 19:51:45.112 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-cookie.war] has finished in [790] ms
+23-May-2024 19:51:45.114 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form-tarea2.war]
+23-May-2024 19:51:45.119 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form-tarea2] was found with a last modified time that did not match the associated WAR. It will be deleted.
+23-May-2024 19:51:45.163 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form-tarea2.war] has finished in [49] ms
+23-May-2024 19:51:45.165 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war]
+23-May-2024 19:51:45.204 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-form.war] has finished in [39] ms
+23-May-2024 19:51:45.206 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-headers.war]
+23-May-2024 19:51:45.209 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-headers] was found with a last modified time that did not match the associated WAR. It will be deleted.
+23-May-2024 19:51:45.474 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23-May-2024 19:51:45.478 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-headers.war] has finished in [271] ms
+23-May-2024 19:51:45.480 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-session.war]
+23-May-2024 19:51:45.483 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-session] was found with a last modified time that did not match the associated WAR. It will be deleted.
+23-May-2024 19:51:45.720 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23-May-2024 19:51:45.723 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-session.war] has finished in [244] ms
+23-May-2024 19:51:45.725 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp.war]
+23-May-2024 19:51:45.727 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp] was found with a last modified time that did not match the associated WAR. It will be deleted.
+23-May-2024 19:51:45.764 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp.war] has finished in [39] ms
+23-May-2024 19:51:45.765 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\docs]
+23-May-2024 19:51:45.794 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\docs] has finished in [28] ms
+23-May-2024 19:51:45.794 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\examples]
+23-May-2024 19:51:46.113 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\examples] has finished in [319] ms
+23-May-2024 19:51:46.114 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\host-manager]
+23-May-2024 19:51:46.148 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\host-manager] has finished in [33] ms
+23-May-2024 19:51:46.148 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\manager]
+23-May-2024 19:51:46.179 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\manager] has finished in [31] ms
+23-May-2024 19:51:46.179 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\ROOT]
+23-May-2024 19:51:46.201 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\ROOT] has finished in [22] ms
+23-May-2024 19:51:46.212 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+23-May-2024 19:51:46.243 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2071] milliseconds
+23-May-2024 19:53:37.961 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-May-2024 19:53:37.965 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+23-May-2024 19:53:37.999 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-May-2024 19:53:38.005 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

@@ -1,0 +1,4 @@
+27-May-2024 00:15:02.659 INFO [http-nio-8080-exec-12] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/webapp-session]
+27-May-2024 00:15:02.713 INFO [http-nio-8080-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-session.war]
+27-May-2024 00:15:03.527 INFO [http-nio-8080-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-May-2024 00:15:03.580 INFO [http-nio-8080-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\CURSOS\Jakarta\JavaEE\apache-tomcat-10.1.23\webapps\webapp-session.war] has finished in [867] ms
