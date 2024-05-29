@@ -14,7 +14,7 @@
 <form name="formcarro" action="<%=request.getContextPath()%>/carro/actualizar" method="post">
     <table>
         <tr>
-            <th>ID</th>
+    <th>ID</th>
             <th>Nombre</th>
             <th>Precio</th>
             <th>Cantidad</th>

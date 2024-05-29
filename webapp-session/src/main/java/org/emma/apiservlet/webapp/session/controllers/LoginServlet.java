@@ -50,7 +50,6 @@ public class LoginServlet extends HttpServlet {
             //En vez de usar cookie, ahora usamos la session
             HttpSession session = req.getSession();
             session.setAttribute("username", username);
-
             resp.sendRedirect(req.getContextPath() + "/login");
 
         } else {

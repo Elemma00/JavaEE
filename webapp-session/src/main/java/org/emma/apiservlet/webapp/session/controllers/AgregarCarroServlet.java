@@ -11,8 +11,10 @@ import org.emma.apiservlet.webapp.session.models.ItemCarro;
 import org.emma.apiservlet.webapp.session.models.Producto;
 import org.emma.apiservlet.webapp.session.services.ProductoService;
 import org.emma.apiservlet.webapp.session.services.ProductoServiceImpl;
+import org.emma.apiservlet.webapp.session.services.ProductoServiceJdbcImpl;
 
 import java.io.IOException;
+import java.sql.Connection;
 import java.util.Optional;
 
 @WebServlet("/carro/agregar")
@@ -20,7 +22,8 @@ public class AgregarCarroServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Long id = Long.parseLong(req.getParameter("id").trim());
-        ProductoService service = new ProductoServiceImpl();
+        Connection conn = (Connection) req.getAttribute("conn");
+        ProductoService service = new ProductoServiceJdbcImpl(conn);
         Optional<Producto> producto = service.porId(id);
         if(producto.isPresent()){
             ItemCarro item = new ItemCarro(1,producto.get());

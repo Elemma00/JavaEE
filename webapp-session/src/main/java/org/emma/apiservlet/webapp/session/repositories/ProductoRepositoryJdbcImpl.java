@@ -18,7 +18,7 @@ public class ProductoRepositoryJdbcImpl implements Repository<Producto>{
     public List<Producto> listar() throws SQLException {
         List<Producto> productos = new ArrayList<>();
         try (Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery("SELECT * FROM productos as p" + "inner join categorias as c ON (p.categoria_id = c.id)")) {
+             ResultSet rs = stmt.executeQuery("SELECT p.*, c.nombre as categoria FROM productos as p " + "inner join categorias as c ON (p.categoria_id = c.id)")) {
             while(rs.next()){
                 Producto p = getProducto(rs);
                 productos.add(p);
