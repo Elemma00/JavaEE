@@ -1,0 +1,88 @@
+28-May-2024 14:11:49.186 INFO [main] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+28-May-2024 14:11:51.105 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-May-2024 14:11:51.105 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-May-2024 14:11:51.108 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@69de5bed')
+28-May-2024 14:12:25.104 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:12:26.188 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+28-May-2024 14:12:26.189 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:12:30.018 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:12:30.226 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:12:34.964 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:12:34.964 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:12:35.951 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:12:35.953 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:12:35.957 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:12:35.958 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:12:36.868 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:12:36.873 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:12:37.824 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:12:37.825 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:12:42.151 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:12:42.152 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:22:56.211 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
+28-May-2024 14:22:56.212 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+28-May-2024 14:22:56.610 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+28-May-2024 14:26:31.767 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+28-May-2024 14:26:32.193 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+28-May-2024 14:31:03.790 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:06.088 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+28-May-2024 14:31:06.089 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:07.439 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:07.444 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:07.447 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:07.575 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:08.442 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:08.443 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:10.586 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:10.587 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:14.387 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:14.389 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:14.393 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:14.394 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:15.913 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:15.913 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:16.669 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:16.829 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:18.322 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:18.326 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:19.180 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:19.182 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:19.187 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:19.188 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:24.806 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:24.808 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:24.814 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:24.815 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:28.319 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:28.320 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:30.729 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:30.730 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
+28-May-2024 14:31:30.730 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:30.735 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:30.735 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+28-May-2024 14:31:30.736 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:31.877 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:31.878 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:32.614 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:32.615 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:34.942 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:34.943 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:34.947 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:34.948 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:37.049 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:37.049 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:37.054 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:37.055 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:37.879 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:37.880 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:41.188 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:41.188 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:41.194 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:41.194 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:43.286 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:43.286 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
+28-May-2024 14:31:43.286 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 14:31:43.291 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+28-May-2024 14:31:43.292 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+28-May-2024 14:31:43.293 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición destruida
+28-May-2024 15:29:49.277 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
