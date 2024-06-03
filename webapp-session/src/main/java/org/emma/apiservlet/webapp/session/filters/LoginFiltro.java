@@ -16,7 +16,7 @@ import java.util.Optional;
 
 // Se utilizan solo en el contexto de los request y no tienen acceso a los objetos de la sesión.
 // el metodo doFilter se ejecuta por cada petición que llega al servidor, antes de que llegue a un servlet o un JSP.
-@WebFilter({"/carro/*"})
+@WebFilter({"/carro/*" , "/productos/form/*", "/productos/eliminar/*"})
 public class LoginFiltro implements Filter {
 
     @Override
