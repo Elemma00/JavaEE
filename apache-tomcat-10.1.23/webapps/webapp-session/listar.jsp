@@ -10,13 +10,13 @@
 <html>
 <head>
     <title>Listado de Productos</title>
-    <%if (username.isPresent()) {%>
-    <div>Hola <%=username.get()%>, bienvenido!</div>
-    <p><a href="<%=request.getContextPath()%>/productos/form"> crear [+]</a></p>
-    <%}%>
 </head>
 <body>
 <h1>Listado de Productos</h1>
+<%if (username.isPresent()) {%>
+<div>Hola <%=username.get()%>, bienvenido!</div>
+<p><a href="<%=request.getContextPath()%>/productos/form"> crear [+]</a></p>
+<%}%>
 <table>
     <tr>
         <th>id</th>
@@ -43,7 +43,7 @@
         <td><a href="<%=request.getContextPath()%>/carro/agregar?id=<%=p.getId()%>">Agregar al carro</a></td>
         <td><a href="<%=request.getContextPath()%>/productos/form?id=<%=p.getId()%>">Editar</a></td>
         <td><a onclick="return confirm('¿Estás seguro de eliminar el producto?')"
-                href="<%=request.getContextPath()%>/productos/eliminar?id=<%=p.getId()%>">Eliminar</a></td>
+               href="<%=request.getContextPath()%>/productos/eliminar?id=<%=p.getId()%>">Eliminar</a></td>
         <%}%>
     </tr>
     <%}%>
