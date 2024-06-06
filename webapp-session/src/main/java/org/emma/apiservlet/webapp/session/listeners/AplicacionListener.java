@@ -41,7 +41,7 @@ public class AplicacionListener implements ServletContextListener, ServletReques
     public void requestInitialized(ServletRequestEvent sre) {
         servletContext.log("Petición iniciada");
         sre.getServletRequest().setAttribute("mensaje", "guardando algun valor para el request");
-
+        sre.getServletRequest().setAttribute("title", "Catálogo Servlet");
     }
 
     @Override
