@@ -1,0 +1,948 @@
+06-Jun-2024 15:21:45.233 INFO [main] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+06-Jun-2024 15:21:49.705 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+06-Jun-2024 15:21:49.707 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+06-Jun-2024 15:21:49.709 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5d267575')
+06-Jun-2024 15:22:06.065 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+06-Jun-2024 15:22:09.476 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+06-Jun-2024 15:22:11.634 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:13.259 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:13.738 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [31] en el archivo jsp: [/layout/header.jsp]
+carro cannot be resolved
+28:                     <a class="nav-link" href="<%=request.getContextPath()%>/productos">Productos</a>
+29:                 </li>
+30:                 <li class="nav-item">
+31:                     <a class="nav-link" href="<%=request.getContextPath()%>/carro/ver">Ver Carro (<%=carro.getItems().size()%>)</a>
+32:                 </li>
+33:                 <li class="nav-item dropdown">
+34:                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [31] en el archivo jsp: [/layout/header.jsp]
+carro cannot be resolved
+28:                     <a class="nav-link" href="<%=request.getContextPath()%>/productos">Productos</a>
+29:                 </li>
+30:                 <li class="nav-item">
+31:                     <a class="nav-link" href="<%=request.getContextPath()%>/carro/ver">Ver Carro (<%=carro.getItems().size()%>)</a>
+32:                 </li>
+33:                 <li class="nav-item dropdown">
+34:                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:13.738 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:13.739 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:13.739 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:19.995 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:20.144 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [31] en el archivo jsp: [/layout/header.jsp]
+carro cannot be resolved
+28:                     <a class="nav-link" href="<%=request.getContextPath()%>/productos">Productos</a>
+29:                 </li>
+30:                 <li class="nav-item">
+31:                     <a class="nav-link" href="<%=request.getContextPath()%>/carro/ver">Ver Carro (<%=carro.getItems().size()%>)</a>
+32:                 </li>
+33:                 <li class="nav-item dropdown">
+34:                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [31] en el archivo jsp: [/layout/header.jsp]
+carro cannot be resolved
+28:                     <a class="nav-link" href="<%=request.getContextPath()%>/productos">Productos</a>
+29:                 </li>
+30:                 <li class="nav-item">
+31:                     <a class="nav-link" href="<%=request.getContextPath()%>/carro/ver">Ver Carro (<%=carro.getItems().size()%>)</a>
+32:                 </li>
+33:                 <li class="nav-item dropdown">
+34:                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:20.145 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:20.708 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:20.709 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:20.711 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:21.230 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:21.233 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:21.233 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:21.826 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:21.828 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:21.829 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:22.335 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:22.338 SEVERE [http-nio-8080-exec-11] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:22.338 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:22.755 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:22.758 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:22.758 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:22.949 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:22.952 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:22.952 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:23.122 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:23.126 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:23.126 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:23.286 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:23.288 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:23.288 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:23.441 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:23.445 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:23.445 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:23.597 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:23.600 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:23.600 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:22:24.454 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:22:24.612 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [31] en el archivo jsp: [/layout/header.jsp]
+carro cannot be resolved
+28:                     <a class="nav-link" href="<%=request.getContextPath()%>/productos">Productos</a>
+29:                 </li>
+30:                 <li class="nav-item">
+31:                     <a class="nav-link" href="<%=request.getContextPath()%>/carro/ver">Ver Carro (<%=carro.getItems().size()%>)</a>
+32:                 </li>
+33:                 <li class="nav-item dropdown">
+34:                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [31] en el archivo jsp: [/layout/header.jsp]
+carro cannot be resolved
+28:                     <a class="nav-link" href="<%=request.getContextPath()%>/productos">Productos</a>
+29:                 </li>
+30:                 <li class="nav-item">
+31:                     <a class="nav-link" href="<%=request.getContextPath()%>/carro/ver">Ver Carro (<%=carro.getItems().size()%>)</a>
+32:                 </li>
+33:                 <li class="nav-item dropdown">
+34:                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:22:24.612 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:06.587 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+06-Jun-2024 15:23:09.037 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+06-Jun-2024 15:23:10.409 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:10.762 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+06-Jun-2024 15:23:10.780 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:11.492 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:11.496 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:12.012 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:12.014 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:29.178 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:29.565 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:32.139 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:32.142 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:34.822 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:34.826 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:37.483 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:37.674 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:42.334 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:42.416 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:42.421 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:42.424 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:44.025 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:44.028 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:47.159 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:47.353 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:48.338 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:48.345 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:23:49.601 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:23:49.608 SEVERE [http-nio-8080-exec-22] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [org.emma.apiservlet.webapp.session.controllers.AgregarCarroServlet] lanzó excepción
+	java.lang.NullPointerException: Cannot invoke "org.emma.apiservlet.webapp.session.models.Carro.addItemCarro(org.emma.apiservlet.webapp.session.models.ItemCarro)" because "this.carro" is null
+		at org.emma.apiservlet.webapp.session.controllers.AgregarCarroServlet.doGet(AgregarCarroServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.LoginFiltro.doFilter(LoginFiltro.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:23:49.608 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:24:30.656 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
+06-Jun-2024 15:24:30.657 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+06-Jun-2024 15:24:33.381 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+06-Jun-2024 15:24:37.104 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:24:37.339 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+06-Jun-2024 15:24:37.342 SEVERE [http-nio-8080-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/layout/header.jsp] en línea [31]
+
+28:                     <a class="nav-link" href="<%=request.getContextPath()%>/productos">Productos</a>
+29:                 </li>
+30:                 <li class="nav-item">
+31:                     <a class="nav-link" href="<%=request.getContextPath()%>/carro/ver">Ver Carro (<%=((Carro)request.getSession().getAttribute("carro")).getItems().size()%>)</a>
+32:                 </li>
+33:                 <li class="nav-item dropdown">
+34:                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "org.emma.apiservlet.webapp.session.models.Carro.getItems()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:173)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:24:37.342 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:24:38.542 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:24:38.545 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/webapp-session] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/layout/header.jsp] en línea [31]
+
+28:                     <a class="nav-link" href="<%=request.getContextPath()%>/productos">Productos</a>
+29:                 </li>
+30:                 <li class="nav-item">
+31:                     <a class="nav-link" href="<%=request.getContextPath()%>/carro/ver">Ver Carro (<%=((Carro)request.getSession().getAttribute("carro")).getItems().size()%>)</a>
+32:                 </li>
+33:                 <li class="nav-item dropdown">
+34:                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "org.emma.apiservlet.webapp.session.models.Carro.getItems()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:173)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:24:38.547 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:25:03.978 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
+06-Jun-2024 15:25:03.979 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+06-Jun-2024 15:25:06.826 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+06-Jun-2024 15:25:07.612 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:25:07.826 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+06-Jun-2024 15:25:07.828 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:25:16.232 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:25:16.237 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:26:52.873 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:26:52.877 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:26:52.879 INFO [http-nio-8080-exec-36] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:26:52.882 INFO [http-nio-8080-exec-36] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:26:54.368 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:26:54.957 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:26:58.366 INFO [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:26:58.368 INFO [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:26:58.373 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:26:58.513 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:26:59.757 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:26:59.759 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:27:01.087 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:27:01.090 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:27:02.381 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:27:02.384 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:27:06.335 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:27:06.345 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:27:06.350 INFO [http-nio-8080-exec-34] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:27:06.354 INFO [http-nio-8080-exec-34] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:27:08.672 INFO [http-nio-8080-exec-36] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:27:08.675 INFO [http-nio-8080-exec-36] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:27:09.356 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:27:09.362 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:27:10.204 INFO [http-nio-8080-exec-40] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:27:10.217 SEVERE [http-nio-8080-exec-40] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [org.emma.apiservlet.webapp.session.controllers.AgregarCarroServlet] lanzó excepción
+	java.lang.NullPointerException: Cannot invoke "org.emma.apiservlet.webapp.session.models.Carro.addItemCarro(org.emma.apiservlet.webapp.session.models.ItemCarro)" because "this.carro" is null
+		at org.emma.apiservlet.webapp.session.controllers.AgregarCarroServlet.doGet(AgregarCarroServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.LoginFiltro.doFilter(LoginFiltro.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:27:10.217 INFO [http-nio-8080-exec-40] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:29:31.779 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
+06-Jun-2024 15:29:31.779 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+06-Jun-2024 15:32:34.238 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+06-Jun-2024 15:32:38.819 INFO [http-nio-8080-exec-53] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:32:39.027 INFO [http-nio-8080-exec-53] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+06-Jun-2024 15:32:39.028 INFO [http-nio-8080-exec-53] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:32:39.032 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:32:39.033 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+06-Jun-2024 15:32:39.034 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:32:43.717 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:32:43.846 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:32:47.472 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:32:47.482 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:32:47.486 INFO [http-nio-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:32:47.490 INFO [http-nio-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:32:48.969 INFO [http-nio-8080-exec-62] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:32:48.973 INFO [http-nio-8080-exec-62] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:32:49.651 INFO [http-nio-8080-exec-57] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:32:49.821 INFO [http-nio-8080-exec-57] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:32:50.797 INFO [http-nio-8080-exec-59] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:32:50.801 SEVERE [http-nio-8080-exec-59] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [org.emma.apiservlet.webapp.session.controllers.AgregarCarroServlet] lanzó excepción
+	java.lang.NullPointerException: Cannot invoke "org.emma.apiservlet.webapp.session.models.Carro.addItemCarro(org.emma.apiservlet.webapp.session.models.ItemCarro)" because "this.carro" is null
+		at org.emma.apiservlet.webapp.session.controllers.AgregarCarroServlet.doGet(AgregarCarroServlet.java:37)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:196)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.LoginFiltro.doFilter(LoginFiltro.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.emma.apiservlet.webapp.session.filters.ConexionFilter.doFilter(ConexionFilter.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:165)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+06-Jun-2024 15:32:50.801 INFO [http-nio-8080-exec-59] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:35:01.922 INFO [http-nio-8080-exec-64] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
+06-Jun-2024 15:35:01.922 INFO [http-nio-8080-exec-64] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
+06-Jun-2024 15:35:01.923 INFO [http-nio-8080-exec-64] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+06-Jun-2024 15:38:36.695 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+06-Jun-2024 15:38:36.696 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+06-Jun-2024 15:38:36.698 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4f6938cb')
+06-Jun-2024 15:40:54.392 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+06-Jun-2024 15:41:06.042 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+06-Jun-2024 15:41:06.857 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+06-Jun-2024 15:41:21.793 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+06-Jun-2024 15:41:22.551 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log Inicializando la aplicación
+06-Jun-2024 15:41:30.909 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición iniciada
+06-Jun-2024 15:41:31.368 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Inicializando la sesión HTTP
+06-Jun-2024 15:41:31.372 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Petición destruida
+06-Jun-2024 15:44:52.304 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Destruyendo la sesión HTTP
+06-Jun-2024 15:44:52.304 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Destruyendo la aplicación
+06-Jun-2024 15:44:57.247 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log inicializando la aplicacion!
+06-Jun-2024 15:46:23.184 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:26.522 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:27.034 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log inicializando la sesion http
+06-Jun-2024 15:46:27.034 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log inicializando la sesion http
+06-Jun-2024 15:46:28.041 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:28.041 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:29.530 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:30.214 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:31.569 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:31.581 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:33.459 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:33.613 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:34.916 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:34.917 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:38.413 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:38.446 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:38.452 INFO [http-nio-8080-exec-27] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:38.453 INFO [http-nio-8080-exec-27] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:39.561 INFO [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:39.565 INFO [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:40.591 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:40.608 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:43.339 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:43.356 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 15:46:43.362 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log inicializando el request!
+06-Jun-2024 15:46:43.604 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log destruyendo el request!
+06-Jun-2024 16:17:00.024 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log destruyendo la sesion http
+06-Jun-2024 16:17:00.025 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log destruyendo la sesion http
